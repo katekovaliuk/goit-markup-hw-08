@@ -1,0 +1,44 @@
+.cliets__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
+
+.clients__box:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.clients__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+
+    transition: color var(--anim), border-color var(--anim);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-text-color);
+        color: var(--accent-text-color);
+    }
+}
+
+.clients__icon {
+    fill: currentColor;
+}

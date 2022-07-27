@@ -1,0 +1,15 @@
+/* Секція присоединяйтесь */
+.follow {
+    margin-left: 70px;
+
+    &__title {
+        display: block;
+        margin-bottom: 20px;
+        height: 16px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+    }
+}
+

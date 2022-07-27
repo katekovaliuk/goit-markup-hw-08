@@ -1,0 +1,48 @@
+.check__label {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    line-height: 1.71;
+
+    color: var(--primary-text-color);
+
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    color: var(--primary-text-color);
+
+    &__icon {
+        display: inline-block;
+        margin-right: 7px;
+
+        border: 2px solid var(--title-text-color);
+        border-radius: 2px;
+
+        transition: background-color var(--anim);
+    }
+
+    &:checked+ &__icon {
+        border-color: transparent;
+        background-color: var(--accent-text-color);
+        background-size: contain;
+        background-origin: border-box;
+        transition: background-color var(--anim);
+    }
+}
+
+.agreement {
+    text-decoration: underline;
+    color: var(--accent-text-color);
+
+    line-height: 1.71
+}
