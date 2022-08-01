@@ -26,6 +26,14 @@
         <div class="container header__container">
 
             <a class="logo logo--header" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+
+            <button class="mobile-menu__btn" type="button" data-menu-button>
+                <svg class="mobile-menu__icon" width="24" height="16">
+                    <use class="mobile-menu__burger" href="./images/icons.svg#icon-menu"></use>
+                    <use class="mobile-menu__close" href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+
             <nav class="nav">
                 <ul class="nav__list list ">
                     <li class="nav__item"><a class="nav__link link" href="./index.html">Студия</a>
@@ -88,18 +96,37 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-1l.jpg 1x, ./images/portfolio/portfolio2x-1l.jpg 2x"
+                                        type="image/jpg" />
 
-                                <img src="./images/portfolio/img-1.jpg" alt="Веб-сайт на ноутбуке" width="370"
-                                    height="294">
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-1m.jpg 1x, ./images/portfolio/portfolio2x-1m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-1s.jpg 1x, ./images/portfolio/portfolio2x-1l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-1l.jpg"
+                                        alt="Веб-сайт на ноутбуке" width="370" height="294">
+                                </picture>
+
+                                <!-- <img src="./images/portfolio/portfolio-1l.jpg" alt="Веб-сайт на ноутбуке" width="370" -->
+                                <!-- height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
 
                             </div>
-                            <div class="grid__card">
+                            <div class="grid__card grid__card--grow">
                                 <h2 class="grid__title">Технокряк</h2>
                                 <p class="grid__descr">Веб-сайт</p>
                             </div>
@@ -110,13 +137,32 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-2.jpg" alt="постер с баскетболистами" width="370"
-                                    height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-2l.jpg 1x, ./images/portfolio/portfolio2x-2l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-2m.jpg 1x, ./images/portfolio/portfolio2x-2m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-2s.jpg 1x, ./images/portfolio/portfolio2x-2l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-2l.jpg"
+                                        alt="постер с баскетболистами" width="370" height="294">
+                                </picture>
+                                <!-- <img src="./images/portfolio/portfolio-l.jpg" alt="постер с баскетболистами" width="370"
+                                    height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -128,13 +174,32 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-3.jpg" alt="эмблема ресторана Seafood" width="370"
-                                    height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-3l.jpg 1x, ./images/portfolio/portfolio2x-3l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-3m.jpg 1x, ./images/portfolio/portfolio2x-3m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-3s.jpg 1x, ./images/portfolio/portfolio2x-3l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-3l.jpg"
+                                        alt="эмблема ресторана Seafood" width="370" height="294">
+                                </picture>
+                                <!-- <img src="./images/portfolio/img-3.jpg" alt="эмблема ресторана Seafood" width="370"
+                                    height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -146,12 +211,31 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-4.jpg" alt="наушники" width="370" height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-4l.jpg 1x, ./images/portfolio/portfolio2x-4l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-4m.jpg 1x, ./images/portfolio/portfolio2x-4m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-4s.jpg 1x, ./images/portfolio/portfolio2x-4l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-4l.jpg" alt="наушники"
+                                        width="370" height="294">
+                                </picture>
+                                <!-- <img src="./images/portfolio/img-4.jpg" alt="наушники" width="370" height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -164,12 +248,31 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-5.jpg" alt="коробки" width="370" height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-5l.jpg 1x, ./images/portfolio/portfolio2x-5l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-5m.jpg 1x, ./images/portfolio/portfolio2x-5m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-5s.jpg 1x, ./images/portfolio/portfolio2x-5l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-5l.jpg" alt="коробки"
+                                        width="370" height="294">
+                                </picture>
+                                <!-- <img src="./images/portfolio/img-5.jpg" alt="коробки" width="370" height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -181,13 +284,32 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-6.jpg" alt="монитор компьютера" width="370"
-                                    height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-6l.jpg 1x, ./images/portfolio/portfolio2x-6l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-6m.jpg 1x, ./images/portfolio/portfolio2x-6m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-6s.jpg 1x, ./images/portfolio/portfolio2x-6l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-6l.jpg"
+                                        alt="монитор компьютера" width="370" height="294">
+                                </picture>
+                                <!-- <img src="./images/portfolio/img-6.jpg" alt="монитор компьютера" width="370"
+                                    height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -200,12 +322,32 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-7.jpg" alt="брошюра" width="370" height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-7l.jpg 1x, ./images/portfolio/portfolio2x-7l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-7m.jpg 1x, ./images/portfolio/portfolio2x-7m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-7s.jpg 1x, ./images/portfolio/portfolio2x-7l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-7l.jpg" alt="брошюра"
+                                        width="370" height="294">
+                                </picture>
+
+                                <!-- <img src="./images/portfolio/img-7.jpg" alt="брошюра" width="370" height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -218,12 +360,31 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-8.jpg" alt="этикетка" width="370" height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-8l.jpg 1x, ./images/portfolio/portfolio2x-8l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-8m.jpg 1x, ./images/portfolio/portfolio2x-8m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-8s.jpg 1x, ./images/portfolio/portfolio2x-8l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-8l.jpg" alt="этикетка"
+                                        width="370" height="294">
+                                </picture>
+                                <!-- <img src="./images/portfolio/img-8.jpg" alt="этикетка" width="370" height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -235,13 +396,32 @@
                     <li class="grid__item">
                         <a class="grid__link link" href="">
                             <div class="grid__img">
-                                <img src="./images/portfolio/img-9.jpg" alt="человек печатает на ноутбуке" width="370"
-                                    height="294">
+                                <picture>
+                                    <!-- desktop screen -->
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/portfolio-9l.jpg 1x, ./images/portfolio/portfolio2x-9l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- tablet screen -->
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/portfolio-9m.jpg 1x, ./images/portfolio/portfolio2x-9m.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <!-- mobile screen -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/portfolio-9s.jpg 1x, ./images/portfolio/portfolio2x-9l.jpg 2x"
+                                        type="image/jpg" />
+
+                                    <img class="grid_box" src="./images/portfolio/portfolio-9l.jpg"
+                                        alt="человек печатает на ноутбуке" width="370" height="294">
+                                </picture>
+                                <!-- <img src="./images/portfolio/img-9.jpg" alt="человек печатает на ноутбуке" width="370"
+                                    height="294"> -->
                                 <div class="overlay">
                                     <p class="overlay__descr">Ресурс предлагает комплексные предложения с
                                         разным
                                         уровнем функционала и сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения <br>о компании или частном лице.</p>
+                                        исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
                             </div>
                             <div class="grid__card">
@@ -334,6 +514,48 @@
         </div>
 
     </footer>
+
+    <!-- Мобільне меню -->
+    <div class="mobile-menu" data-menu>
+        <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link current link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link link" href="./index.html">Контакты</a>
+            </li>
+        </ul>
+        <ul class=" mobile-menu-contacts list">
+            <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link accent link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mobile-menu-social list">
+            <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">LinkedIn</a>
+            </li>
+        </ul>
+
+
+
+    </div>
+
+    <script src="./js/menu.js"></script>
 
 </body>
 
