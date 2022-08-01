@@ -5,7 +5,20 @@
 
    &__box {
         display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
+        text-align: center;
+
+        @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+        gap: 70px;
+
+        text-align: start;
         align-items: baseline;
+        }
+        
+        
     }
 }
 

@@ -1,11 +1,19 @@
 .check__label {
     display: inline-block;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 
-    line-height: 1.71;
+    
+    font-size: 12px;
+    line-height: 1.17;
 
     color: var(--primary-text-color);
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        margin-bottom: 30px;
+    }
 
 }
 
@@ -19,14 +27,18 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 
+    
     color: var(--primary-text-color);
 
     &__icon {
         display: inline-block;
-        margin-right: 7px;
+        margin-top: auto;
+        margin-right: 6px;
 
-        border: 2px solid var(--title-text-color);
+        border: 1px solid var(--title-text-color);
         border-radius: 2px;
+
+        
 
         transition: background-color var(--anim);
     }
@@ -43,6 +55,11 @@
 .agreement {
     text-decoration: underline;
     color: var(--accent-text-color);
+    font-size: 11px;
+    line-height: 1.17;
 
-    line-height: 1.71
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
