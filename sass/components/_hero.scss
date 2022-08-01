@@ -11,7 +11,7 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(././images/img-bgd_s.jpg);
+        url(.././images/img-bgd_s.jpg);
     background-color: var(--hero-background-color);
     background-size: cover;
     background-position: center;
@@ -25,14 +25,14 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                    url(../../images/img-bgd_s2x.jpg);
+                    url(.././images/img-bgd_s2x.jpg);
         }
 
         @media screen and (min-width: 768px) {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)), 
-                    url(../../images/img-bgd_m.jpg);
+                    url(.././images/img-bgd_m.jpg);
 
             // Для ретіна екранів планшетна версія
             @media (min-device-pixel-ratio: 2),
@@ -42,7 +42,7 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(../../images/img-bgd_m2x.jpg);;
+                    url(.././images/img-bgd_m2x.jpg);;
             }
         }
         
@@ -50,7 +50,7 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(../../images/img-bgd.jpg);
+                    url(.././images/img-bgd.jpg);
     
             // Для ретіна екранів десктопна версія
             @media (min-device-pixel-ratio: 2),
@@ -60,7 +60,7 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(../../images/img-bgd_l2x.jpg);
+                    url(.././images/img-bgd_l2x.jpg);
             }
         }
 
