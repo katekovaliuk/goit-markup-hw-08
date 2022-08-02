@@ -48,12 +48,20 @@
 }
 
 .features__title {
+    margin-bottom: 10px;
+
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
+
 }
 
 .features__descr {

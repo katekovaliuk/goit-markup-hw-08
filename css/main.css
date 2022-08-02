@@ -457,7 +457,7 @@ address {
   }
 }
 .hero__title {
-  width: 360px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -467,6 +467,11 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -579,12 +584,19 @@ address {
 }
 
 .features__title {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 
 .features__descr {
@@ -706,19 +718,16 @@ address {
 @media screen and (min-width: 320px) {
   .box__img {
     width: 100%;
-    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
   .box__img {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .box__img {
     width: 270px;
-    height: 260px;
   }
 }
 
@@ -788,6 +797,9 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients__item {
@@ -839,16 +851,19 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 60px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer__box {
+    gap: 70px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    gap: 70px;
     text-align: start;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -874,6 +889,11 @@ address {
 }
 
 /* Секція присоединяйтесь */
+@media screen and (min-width: 1200px) {
+  .follow {
+    margin-left: 70px;
+  }
+}
 .follow__title {
   display: block;
   margin-bottom: 20px;
@@ -884,9 +904,6 @@ address {
   color: var(--secondary-text-color);
 }
 
-.subscribe {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .subscribe {
     display: -webkit-box;
@@ -904,14 +921,19 @@ address {
     padding-left: 166px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
+            justify-content: start;
     padding-right: 0;
     padding-left: 0;
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 .subscribe__title {
@@ -965,14 +987,14 @@ address {
 @media screen and (min-width: 768px) {
   .filters {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .filters {
     margin-bottom: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1018,7 +1040,6 @@ address {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .grid__img {
     width: 100%;
-    height: 294px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1067,15 +1088,9 @@ address {
   color: var(--primary-text-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) {
   .grid_box {
     width: 100%;
-    height: 294px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .grid_box {
-    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1134,6 +1149,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -1166,7 +1182,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 100;
+  z-index: 1000;
   background-color: var(--secondary-text-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
