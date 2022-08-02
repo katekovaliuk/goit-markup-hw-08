@@ -4,16 +4,23 @@
     background-color: var(--footer-background-color);
 
    &__box {
-    
-        display: flex;
+    display: flex;
+
+    @media screen and (max-width:1199px) {
         flex-wrap: wrap;
         gap: 60px;
         justify-content: space-around;
         text-align: center;
+    }
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 60px;
+        // justify-content: space-around;
+        // text-align: center;
 
-        @media screen and (max-width:1199px) {
+        @media screen and (min-width:1199px) {
         // flex-wrap: nowrap;
-        gap: 70px;
+        // gap: 70px;
         // margin: 0;
 
         // text-align: start;
@@ -21,9 +28,8 @@
         }
 
         @media screen and (min-width:1200px){
-            flex-wrap: nowrap;
+            // flex-wrap: nowrap;
     
-
             text-align: start;
             align-items: baseline;
         }

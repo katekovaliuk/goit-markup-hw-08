@@ -3,7 +3,7 @@
     // width: 100%;
     // margin-left: auto;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -21,8 +21,6 @@
 
         @media screen and (min-width:1200px) {
             justify-content: start;
-            padding-right: 0;
-            padding-left: 0;
             margin-left: auto;
         }
     
@@ -36,6 +34,11 @@
         text-transform: uppercase;
 
         color: var(--secondary-text-color);
+
+        @media screen and (min-width:1200px) {
+        text-align: start;
+        }
+
     }
 
     &__form {

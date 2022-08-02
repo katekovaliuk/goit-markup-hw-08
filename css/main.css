@@ -294,6 +294,12 @@ address {
   color: var(--logo-header-color);
   text-decoration: none;
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 @media screen and (min-width: 768px) {
   .logo--header {
     margin-right: 88px;
@@ -848,22 +854,19 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 60px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
 }
 @media screen and (max-width: 1199px) {
   .footer__box {
-    gap: 70px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__box {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     text-align: start;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -904,7 +907,7 @@ address {
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -931,8 +934,6 @@ address {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    padding-right: 0;
-    padding-left: 0;
     margin-left: auto;
   }
 }
@@ -944,6 +945,11 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    text-align: start;
+  }
 }
 .subscribe__input {
   width: 100%;
